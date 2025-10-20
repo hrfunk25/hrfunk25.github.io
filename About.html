@@ -13,7 +13,7 @@
   line-height: 1.6;
   color: #fff;
   min-height: 100vh;
-  background: url('IMG_8786.jpg') no-repeat center center fixed;
+  background: url('images/IMG_8786.jpg') no-repeat center center fixed;
   background-size: contain;
   position: relative;
 }
@@ -71,6 +71,32 @@
       margin-top: 3em;
     }
 
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+
 </style>
 </head>
 <body>
@@ -85,10 +111,12 @@
     <a href="Gallery.html">Gallery</a>
     <a href="Contact.html">Contact</a>
   </nav>
-  <main>
-    <h2></h2>
-    <p></p>
-  </main>
+ <main>
+  <h2>Photo Gallery</h2>
+  <div class="gallery">
+    <img src="images/IMG_8789.jpg" alt="Wedding photo 1">
+  </div>
+</main>
   <footer>
     <p>&copy; 2025 Our Wedding Website | Built with HTML &amp; CSS</p>
   </footer>
