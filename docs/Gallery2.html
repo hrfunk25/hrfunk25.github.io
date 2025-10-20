@@ -1,4 +1,77 @@
-/* Gallery Section */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Registry</title>
+  <style>
+    /* --- BASIC STYLES WITH BACKGROUND IMAGE --- */
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #fff;
+  min-height: 100vh;
+  background: url('images/IMG_8786.jpg') no-repeat center center fixed;
+  background-size: contain;
+  position: relative;
+}
+
+
+    /* Overlay for readability */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 2em 0 1em;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      gap: 1.5em;
+      padding: 0.8em 0;
+      border-radius: 8px;
+      margin: 0 2em;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1.5em;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5em 0;
+      background: rgba(0, 0, 0, 0.6);
+      margin-top: 3em;
+    }
+
+   /* Gallery Section */
 .gallery {
   display: grid;                     /* use CSS grid for responsive layout */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -28,7 +101,23 @@
   transform: scale(1.05);
 }
 
-<main>
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>Us As a Couple</h1>
+    <p>Take a Look at our Journey as a Couple</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Registry.html">Registry</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Contact.html">Contact</a>
+  </nav>
+  <main>
   <h2>Photo Gallery</h2>
   <div class="gallery">
     <img src="images/IMG_8789.jpg" alt="Wedding photo 1">
@@ -41,4 +130,8 @@
     <img src="images/IMG_8639.jpg" alt="Wedding photo 8">
   </div>
 </main>
-
+  <footer>
+    <p>&copy; 2025 Our Wedding Website | Built with HTML &amp; CSS</p>
+  </footer>
+</body>
+</html>
