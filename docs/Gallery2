@@ -1,0 +1,44 @@
+/* Gallery Section */
+.gallery {
+  display: grid;                     /* use CSS grid for responsive layout */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;                         /* space between images */
+  justify-items: center;             /* center images in their grid cell */
+  
+  /* Optional background */
+  background-image: url('images/bg.jpg'); /* your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;                     /* space around the images */
+  border-radius: 10px;
+}
+
+/* Each image */
+.gallery img {
+  width: 100%;                        /* image fills its grid cell */
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+/* Hover effect */
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+<main>
+  <h2>Photo Gallery</h2>
+  <div class="gallery">
+    <img src="images/IMG_8789.jpg" alt="Wedding photo 1">
+    <img src="images/IMG_7941.jpg" alt="Wedding photo 2">
+    <img src="images/IMG_8126.jpg" alt="Wedding photo 3">
+    <img src="images/IMG_8320.jpg" alt="Wedding photo 4">
+    <img src="images/IMG_8324.jpg" alt="Wedding photo 5">
+    <img src="images/IMG_8340.jpg" alt="Wedding photo 6">
+    <img src="images/IMG_8425.jpg" alt="Wedding photo 7">
+    <img src="images/IMG_8639.jpg" alt="Wedding photo 8">
+  </div>
+</main>
+
